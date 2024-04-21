@@ -304,7 +304,7 @@
 
            checkLoss: function(){
             return this.checkIncome() - ((this.checkMissing()) * this.soldPrice)
-            return (`Amount of loss in dollars as cash: $${loss.toLocaleString(50,000,000,000)}`);
+            // return (`Amount of loss in dollars as cash: $${loss.toLocaleString(50,000,000,000)}`);
 
            }
        };
