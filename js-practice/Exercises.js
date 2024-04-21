@@ -50,7 +50,8 @@
 
 // --------------------------Exercise 2-Project---------------------------
 
-// Arrays with for loop assignment
+//-------------- Arrays with for loop assignment
+
 let myCollegues = ['Issac', 'Mark', 'Kofi', 'Benedict', 'Nuella', 'Huldah']
 let bandPlayer = myCollegues[0]
 
@@ -62,7 +63,8 @@ for(let i = 0; i < myCollegues.length; i++){
 
 
 
-// Statement Assignment 
+//-------------------------- Statement Assignment 
+
 if( myCollegues[1] == bandPlayer){
    console.log(`Yes, he's my colleague and a band player as well.`)
 }
@@ -85,8 +87,7 @@ else{
 }
 
 
-// function assignment
-
+// -----------------function assignment
 
 function addThreeNumbers(num1, num2, num3){
       let sum = (num1 + num2) * num3
@@ -98,4 +99,4 @@ console.log(addThreeNumbers(3,4,2));
 
 
 
-// ------------------------Exercise 3- Project----------------
+// -----------------Exercise 3-Project
