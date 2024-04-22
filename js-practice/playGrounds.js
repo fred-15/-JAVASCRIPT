@@ -269,62 +269,58 @@
     // }
 
 
-      
-
-
-
+    
+    //    let car = {
+    //        brand: 'Benz',
+    //        modelName: 'MayBatch v7',
+    //        color: 'Carbon Black',
+    //        Price: `15 Million`,
+    //        productionNum: 500000,
+    //        realOwners: 125000,
+    //        tracked: 25,
+    //        soldPrice: 400000,
        
-       let car = {
-           brand: 'Benz',
-           modelName: 'MayBatch v7',
-           color: 'Carbon Black',
-           Price: `15 Million`,
-           productionNum: 500000,
-           realOwners: 125000,
-           tracked: 25,
-           soldPrice: 400000,
+    //        checkLeftCars: function(){
+    //            return this.productionNum - this.realOwners;
+    //        },
        
-           checkLeftCars: function(){
-               return this.productionNum - this.realOwners;
-           },
+    //        checkTrackedCars: function(){
+    //            return (this.tracked / 100) * this.productionNum;
+    //        },
        
-           checkTrackedCars: function(){
-               return (this.tracked / 100) * this.productionNum;
-           },
-       
-           checkIncome: function(){
-               return this.productionNum * this.soldPrice;
+    //        checkIncome: function(){
+    //            return this.productionNum * this.soldPrice;
                
-           },
+    //        },
        
-           checkMissing: function(){
-               return this.productionNum - this.checkTrackedCars();
+    //        checkMissing: function(){
+    //            return this.productionNum - this.checkTrackedCars();
 
-           },
+    //        },
 
-           checkLoss: function(){
-            return this.checkIncome() - ((this.checkMissing()) * this.soldPrice)
-            // return (`Amount of loss in dollars as cash: $${loss.toLocaleString(50,000,000,000)}`);
+    //        checkLoss: function(){
+    //         return this.checkIncome() - ((this.checkMissing()) * this.soldPrice)
+    //         // return (`Amount of loss in dollars as cash: $${loss.toLocaleString(50,000,000,000)}`);
 
-           }
-       };
+    //        }
+    //    };
 
 
         // --------Calculating for Loss Price of Car object using Variables
 
         // Calculate expected income from selling all cars
-        let expectedIncome = car.checkIncome();
+        // let expectedIncome = car.checkIncome();
 
-        // Calculate actual income received from selling cars to real owners
-        let actualIncome = car.realOwners * car.soldPrice;
+        // // Calculate actual income received from selling cars to real owners
+        // let actualIncome = car.realOwners * car.soldPrice;
 
-        // Calculate the amount of loss in dollars as cash
-        let loss = expectedIncome - actualIncome;
+        // // Calculate the amount of loss in dollars as cash
+        // let loss = expectedIncome - actualIncome;
        
        
-       console.log(car.checkIncome());
-       console.log(car.checkMissing());
-       console.log(car.checkIncome());
+    //    console.log(car.checkIncome());
+    //    console.log(car.checkMissing());
+    //    console.log(car.checkIncome());
     
     // ----In this Car Object version:
     //    - Each method within the `car` object is correctly defined with a comma after its closing brace.
@@ -335,32 +331,71 @@
 
 
 
-
-       if('MayBatch v7'== car.modelName){
-        console.log("MayBatch is an expensive car model of Benz")
-       }
+    //    if('MayBatch v7'== car.modelName){
+    //     console.log("MayBatch is an expensive car model of Benz")
+    //    }
      
 
-       let missingCars = car.checkMissing();
-        console.log(missingCars);
+    //    let missingCars = car.checkMissing();
+    //     console.log(missingCars);
        
 
-       if(missingCars == car.tracked){
-        console.log("The number of missing cars is equal to the  percentage of tracked cars.");
-       }
+    //    if(missingCars == car.tracked){
+    //     console.log("The number of missing cars is equal to the  percentage of tracked cars.");
+    //    }
 
-       else if(missingCars == car.realOwners){
-        console.log("The number of missing cars is equal to the number of real owners.");
-       }
+    //    else if(missingCars == car.realOwners){
+    //     console.log("The number of missing cars is equal to the number of real owners.");
+    //    }
 
-       else{
-        console.log("The number of missing cars is neither equal to the number of tracked cars nor the number of real owners.");
-       }
-
-
+    //    else{
+    //     console.log("The number of missing cars is neither equal to the number of tracked cars nor the number of real owners.");
+    //    }
 
 
+        // Javascript Class concept----
 
+      class Rectangle {
+        constructor(height, width){
+            this.height = height
+            this.width = width
+        }
+      }
+
+      var userOne = new Rectangle(10, 30)
+      var userTwo = new Rectangle(30, 70)
+      console.log(userTwo);
+
+
+      class Person {
+        constructor(name, jobTitle){
+            this.name = 'Fred'    
+            this.jobTitle = 'Security Analyst'
+            this.location = 'USA'
+        }
+      }
+
+      var identity = new Person();
+      console.log(identity)
+
+
+      class Car{
+        constructor(){
+            this.brand = 'Benz'
+            this.modelName = 'Maybatch v7'
+            this.color = 'Carbon black'
+            this.price = '$800,000 '
+            this.energy = '6000 Horse-Power'
+        }
+      }
+
+      var auction = new Car();
+      console.log(auction);
+
+      
+
+      
+      
 
 
 
