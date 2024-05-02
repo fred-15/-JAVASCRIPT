@@ -353,89 +353,302 @@
     //    }
 
 
-        // Javascript Class concept----
 
-      class Rectangle {
-        constructor(height, width){
-            this.height = height
-            this.width = width
-        }
-      }
+    
 
-      var userOne = new Rectangle(10, 30)
-      var userTwo = new Rectangle(30, 70)
-      console.log(userTwo);
+        // Javascript Class concept--------------------------------
 
+      // ---Example-1--------------------
+      // class Rectangle {
+      //   constructor(height, width){
+      //       this.height = height
+      //       this.width = width
+      //   }
+      // }
 
-      class Person {
-        constructor(name, jobTitle){
-            this.name = 'Fred'    
-            this.jobTitle = 'Security Analyst'
-            this.location = 'USA'
-        }
-      }
-
-      var identity = new Person();
-      console.log(identity)
-
-
-      class Car{
-        constructor(){
-            this.brand = 'Benz'
-            this.modelName = 'Maybatch v7'
-            this.color = 'Carbon black'
-            this.price = '$800,000 '
-            this.energy = '6000 Horse-Power'
-        }
-      }
-
-      var auction = new Car();
-      console.log(auction);
-
-      
-
-      
-      
-
-
-
-
-
-
+      // var userOne = new Rectangle(10, 30)
+      // var userTwo = new Rectangle(30, 70)
+      // console.log(userTwo);
 
 
       
+      // --------Examples-2--------------
+      // class Person {
+      //   constructor(name, jobTitle){
+      //       this.name = 'Fred'    
+      //       this.jobTitle = 'Security Analyst'
+      //       this.location = 'USA'
+      //   }
+      // }
+
+      // var identity = new Person();
+      // console.log(identity)
+
+
+
+        // --------Example-3----------
+      // class Car{
+      //   constructor(){
+      //       this.brand = 'Benz'
+      //       this.modelName = 'Maybatch v7'
+      //       this.color = 'Carbon black'
+      //       this.price = '$800,000 '
+      //       this.energy = '6000 Horse-Power'
+      //   }
+
+      //   checkBid= function(){
+      //       return 'This vechicle is bided for 2M Dollars'
+      //   }
+
+      //   soldOut = function(){
+      //       return 'This vechicle was soldout 5Million Dollars'
+      //   }
+      // }
+
+      // var auction = new Car();
+      // console.log(auction);
+
+
+
+      // -------Example-4-----------------
+      // class PCs{
+      //   constructor(){
+      //     this.name = 'Apple',
+      //     this.model = 'MacbookPro'
+      //     this.spec = `8Gb Ram, core i5 and 500GB SSD`
+      //     this.price = `$18000`
+      //     this.malDate = `1/Apr/2024`
+      //   }
+
+      //   checkDiscount(){
+      //     return (25/100) * this.price
+      //   }
+      
+      // }
+      
+      // var pcSpec = new PCs();
+      // console.log(pcSpec)
+      
+      // pcSpec.checkDiscount();
+      
+      
+      // class User{
+      //   constructor(email, name){
+      //     this.email = email;
+      //     this.name = name;
+      //     this.score = 0;
+      //     return this;
+      //   }
+
+      //   login(){
+      //     console.log(this.email, `, just logged in`) 
+      //     return this;
+      //   }
+
+      //   logout(){
+      //     console.log(this.email, ` just logout`)
+      //     return this;
+      //   }
+
+      //   updateScore(){
+      //     this.score++
+      //     console.log(this.email, `This user score is now`, this.score)
+      //     return this;
+      //   }
+      // }
+
+
+      // var userOne = new User(`fredat@gmail.com`, `Fred`)
+      // var userTwo = new User(`cyber@gmail.com`, `Joshua`)
+
+      // userOne.login().updateScore().updateScore().logout()
+
+
+      
+        // class identity{
+        //   constructor(){
+        //     this.name ='Sam Scoop'
+        //     this.email = 'samsicecream@gmail.com'
+        //     this.address= 'Bronx, NY'
+        //     this.time = 0;
+        //     // this.time2 = 
+        //     this.score = 0;
+        //     return this;
+        //   }
+         
+        //   login(){
+        //     console.log(` ${this.email} signed in`) 
+        //     return this;
+        //   }
+
+        //   logout(){
+        //     console.log(` ${this.time}, ${this.email} signed out`)
+        //     return this;
+        //   }
+
+        //   updateScore(){
+        //     this.score++ 
+        //     console.log(`as the ${this.score} time`)
+        //     return this;
+        //   }
+
+        //   updateTime(){
+        //     this.time++
+        //     console.log(`At ${this.time} O'clock`)
+        //     return this;
+        //   }
+
+        //   callAll(){
+        //     console.log(logData.updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().logout());
+        //     return  this;
+        //   }
+        // }
+
+        // var logData = new identity()
+        // logData.callAll()
+
+
+
+        // class identity{
+          //   constructor(){
+          //     this.name ='Sam Scoop'
+          //     this.email = 'samsicecream@gmail.com'
+          //     this.address= 'Bronx, NY'
+          //     this.time = 0;
+          //     // this.time2 = 
+          //     this.score = 0;
+          //     return this;
+          //   }
+           
+          //   login(){
+          //     console.log(` ${this.email} signed in`) 
+          //     return this;
+          //   }
+  
+          //   logout(){
+          //     console.log(` ${this.time}, ${this.email} signed out`)
+          //     return this;
+          //   }
+  
+          //   updateScore(){
+          //     this.score++ 
+          //     console.log(`as the ${this.score} time`)
+          //     return this;
+          //   }
+  
+          //   updateTime(){
+          //     this.time++
+          //     console.log(`At ${this.time} O'clock`)
+          //     return this;
+          //   }
+  
+          //   callAll(){
+          //     console.log(logData.updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().updateTime().login().updateScore().logout());
+          //     return  this;
+          //   }
+          // }
+  
+          // var logData = new identity()
+          // logData.callAll()
+
+
+
+      // --------------Class Inheritanace Concept--
+      
+          // Parent Component
+      //   class Animal{
+      //   constructor(name){
+      //     this.name = name
+      //   }
+       
+      //   speak(){
+      //     console.log(`${this.name} makes noise`)
+      //   }
+
+      // }
+
+      // // child component
+      // class Dog extends Animal{
+      //   speak(){
+      //     console.log(`${this.name} barks`)
+      //   }
+      // }
+
+      // let dog = new Dog( `Tiger`); dog.speak();
       
 
 
+        
+      // myExample 1 --------------------
+      
+      // Parent Component-----
+  //     class Person{
+  //       constructor(name, age, email, address){
+  //         this.name = name
+  //         this.age = age
+  //         this.email = email
+  //         this.address = address
+  //       }
+
+  //       PII(){
+  //         console.log(this.name, this.age, this.email, this.address)
+  //       }
+  //     }
+
+  //     // Child Component---
+  //    class PIIdetails extends Person{
+  //       PII(){
+  //         console.log(this.name, this.age, this.email, this.address)
+  //       }
+  //     }
+
+  //   let provision = new PIIdetails('Ryan smith', 23, 'ryansmith123@gmail.com', '4564 Street, Bronx, Ny'); 
+  //   provision.PII()
 
 
 
+  //   // myExample 2-----------
+
+  //   class SIEM{
+  //     constructor(name, architecture, components){
+  //         this.name = name
+  //         this.architecture = architecture
+  //         this.components = components
+  //         return this;
+     
+  //     }
+
+  //     SIEMinfo(){
+  //       console.log(`${this.name} has ${this.architecture} which two main components known as,${this.components} which makes up the ${this.name} SIEM`)
+  //     }
+      
+  //   }
+
+  //  let SIEMwork = new SIEM('Splunk', `Single & Distributed Instances`, `processing and Management components`)
+    
+  //   SIEMwork.SIEMinfo();
 
 
+    // Example3----------
 
+    // Parent component----
+    // class User{
+    //   constructor(){
+    //     this.username =  'Fred'
+    //     this.email = 'fred123@gmail.com'
+    //     this.password = '********'
+        
+    //   }
 
+    //   register(){
+    //     console.log(`${this.username} is now registered`)
+    //   }
+    // }
 
+    //   let fred = new User()
+    //   fred.register()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
 
 
 
